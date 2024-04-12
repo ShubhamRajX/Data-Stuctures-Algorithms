@@ -25,6 +25,9 @@ int main()
 
 
     // int c = (a++) + 1;
-    int c = ++a + 1;
-    cout << c <<endl;
+    // int c = ++a + 1;
+    // cout << c <<endl;
+
+
+    cout<< (++a) * (++a);
 }

@@ -1,8 +1,7 @@
-#include<iostream>
-using namespace std;
-
-int main()
+//leetcode
+class solution
 {
+    public:
 int reverse(int n)
 {
     int ans =0, rem=0;

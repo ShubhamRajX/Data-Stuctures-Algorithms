@@ -12,7 +12,7 @@ void printArray(int arr[], int size)
 void inc(int arr[], int size)
 {
     arr[0]= arr[0] + 10;
-
+    
     printArray(arr, size);
 }
 int main()

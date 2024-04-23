@@ -22,7 +22,7 @@ int main()
     int arr[100];
 
     int n;
-    cout<<"hoe many numbers you want to enter"<<endl;
+    cout<<"how many numbers you want to enter"<<endl;
 
     cin>> n;
     

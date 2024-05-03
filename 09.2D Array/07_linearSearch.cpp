@@ -1,19 +1,22 @@
 #include<iostream>
 using namespace std;
 
-bool findKey(int arr[3][3],int row,int col,int key)
+bool findKey(int arr[][3],int row,int col,int key)
 {
     for(int i=0;i,row;i++)
     {
         for(int j=0;j<col;j++)
         {
-            if(arr[i][j] = 6)
+            if(arr[i][j] == key)
             {
                 return true;
             }
+            else{
+                return false;
+            }
         }
     }
-    return false;
+    
 }
 
 int main()
@@ -26,13 +29,13 @@ int main()
     int row = 3;
     int col = 3;
 
-    int key = 0;
+    int key = 41;
 
     // int or bool both can use
-    int find = findKey(arr,3,3,key);
+    // int find = findKey(arr,3,3,key);
 
     //here in if cond. you give "find" or "findKey(arr,3,3,key)"
-    if (find)
+    if (findKey(arr,3,3,key))
     {
         cout<<"True";
     }
@@ -40,4 +43,5 @@ int main()
         cout<<"False";
     }
     // cout << find;
+    return 0; 
 }

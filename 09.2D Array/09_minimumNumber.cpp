@@ -28,5 +28,5 @@ int main()
             }
         }
     }
-    cout <<min;
+    cout<<"Minimum number is:- " <<min;
 }

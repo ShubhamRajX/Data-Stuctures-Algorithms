@@ -1,21 +1,48 @@
 #include<iostream>
 using namespace std;
 
-int main()
+double convertTemp(double n)
 {
-    int n;
-    cout<<"Enter number:- ";
-    cin>>n;
-
-    // double k;
-    // double f;
-
     double k = n + 273.15;
     double f = n * 1.80 + 32.00;
 
     cout<<k<<endl;
     cout<<f<<endl;
 }
+
+int main()
+{
+    double n;
+    cout<<"Enter number:- ";
+    cin>>n;
+
+    double result = convertTemp(n);
+
+}
+
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout<<"Enter number:- ";
+//     cin>>n;
+
+//     // double k;
+//     // double f;
+
+//     double k = n + 273.15;
+//     double f = n * 1.80 + 32.00;
+
+//     cout<<k<<endl;
+//     cout<<f<<endl;
+// }
+
+
 
 
 // #include<iostream>

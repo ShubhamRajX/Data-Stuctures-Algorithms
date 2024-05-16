@@ -26,5 +26,6 @@ int main()
     cout<<"First Occurence is: " <<ans1-arr.begin() <<" index"<<endl;
     cout<<"Last Occurence is: " <<ans2-arr.begin() <<" index"<<endl;
 
-    ans
+    int ans3 = ans2 - ans1 +1;
+    cout<<"Total Occurence is: " <<ans3 ;
 }

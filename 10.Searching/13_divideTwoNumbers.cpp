@@ -14,8 +14,10 @@ int solve(int n,int m)
     {
         //perfect solution
         if (abs(mid * m) == abs(n))
-            return mid;
-
+        {
+            ans = mid;
+            break;
+        }
         if (abs(mid * m) > abs(n))
         {
             // left search

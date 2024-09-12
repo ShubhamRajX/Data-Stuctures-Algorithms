@@ -4,18 +4,19 @@ using namespace std;
 int solve(int n,int m)
 {
     int start = 0;
-    int end = n;
-    int dividend = n;
-    int divisor = m;
-    int ans = -1;
+    int end = abs(n);
+    // int dividend = n;
+    // int divisor = m;
+    int ans = 0;
     int mid = start + (end - start) / 2;
 
     while (start <= end)
     {
-        if (mid * divisor == dividend)
+        //perfect solution
+        if (abs(mid * m) == abs(n))
             return mid;
 
-        if (mid * divisor > dividend)
+        if (abs(mid * m) > abs(n))
         {
             // left search
             end = mid - 1;
@@ -30,7 +31,13 @@ int solve(int n,int m)
         }
         mid = start + (end - start) / 2;
     }
-    return ans;
+    if((m < 0 && n < 0) || (m > 0 && n > 0))
+    
+        return ans;
+    
+    else{
+        return -ans;
+    }
 }
 
 int main()
@@ -44,24 +51,7 @@ int main()
     cin >> m;
 
     int ans = solve(n,m);
-    cout << "Ans is " << ans << endl;
-
-    // int precision;
-    // cout << "Enter the number of floating digits in precision " << endl;
-    // cin >> precision;
-
-    // double step = 0.1;
-    // double finalAns = ans;
-
-    // for (int i = 0; i < precision; i++)
-    // {
-    //     for (double j = finalAns; j * j <= n; j = j + step)
-    //     {
-    //         finalAns = j;
-    //     }
-    //     step = step / 10;
-    // }
-    // cout <<"Final ans is. "<< finalAns <<endl;
+    cout << "Ans is-> " << ans << endl;
 
     return 0;
 }
